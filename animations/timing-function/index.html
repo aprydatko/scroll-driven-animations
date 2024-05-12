@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Timing function</title>
+		<link rel="stylesheet" href="styles.css" />
+	</head>
+	<body>
+		<main>
+			<div class="wrapper">
+				<article class="flow">
+					<h1>Named animation timing functions</h1>
+					<figure class="callout">
+						<p>
+							Use the dropdown to change timing function to see
+							how much they affect the overall animation.
+						</p>
+					</figure>
+					<label>
+						Change timing function
+						<select>
+							<option>linear</option>
+							<option>ease</option>
+							<option>ease-in</option>
+							<option>ease-out</option>
+							<option>ease-in-out</option>
+						</select>
+					</label>
+					<div class="grower"></div>
+				</article>
+			</div>
+		</main>
+	</body>
+	<script>
+		const grower = document.querySelector('.grower')
+		const select = document.querySelector('select')
+
+		select.addEventListener('change', ({ target }) => {
+			grower.style.animationTimingFunction = target.value
+		})
+	</script>
+</html>

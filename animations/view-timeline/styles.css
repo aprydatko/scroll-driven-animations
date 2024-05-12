@@ -1,0 +1,27 @@
+/* @keyframes reveal {
+	from {
+		opacity: 0;
+		clip-path: inset(45% 20% 45% 20%);
+	}
+	to {
+		opacity: 1;
+		clip-path: inset(0% 0% 0% 0%);
+	}
+}
+
+.revealing-image {
+	animation-timeline: view(10% 10%);
+} */
+
+.main {
+	font-weight: 300;
+	width: 90vw;
+	max-width: 40em;
+	margin: 0 auto;
+	padding: 4rem 0;
+}
+
+.main img {
+	width: 100%;
+	height: auto;
+}
